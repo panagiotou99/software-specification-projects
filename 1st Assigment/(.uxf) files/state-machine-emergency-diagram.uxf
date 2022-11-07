@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text>Space for diagram notesElock.b</help_text>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>380</x>
+      <y>100</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>S1
+--
+entry()/ run()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>470</x>
+      <y>20</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>30</y>
+      <w>110</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+system boots</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>140</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>460</x>
+      <y>220</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>110</y>
+      <w>260</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+run as usual [else]</panel_attributes>
+    <additional_attributes>10.0;130.0;130.0;130.0;130.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>380</x>
+      <y>430</y>
+      <w>510</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>S2
+--
+entry()/
+   lock.indicators[Indicator_Error].set(true)
+   lock.components[Bottom_Door].set(lock.components[Bottom_Door].measure())
+   lock.components[Top_Door].set(lock.components[Top_Door].measure())
+   lock.components[Bottom_Slide].set(lock.components[Bottom_Slide].measure())
+   lock.components[Top_Slide].set(lock.components[Top_Slide].measure())
+   lock.buttons[Emergency].release() 
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>250</y>
+      <w>330</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[lock.buttons[Emergency].state==true]
+OR
+a slide is being opened or closed
+and it has not opened or closed after 10 seconds
+OR
+a door is being opened or closed
+and it has not opened or closed after 30 seconds</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>560</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[lock.buttons[Emergency].state==true]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>300</x>
+      <y>590</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>LockKeeper presses
+the emergency button
+again to resume business
+after the issue is resolved</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>390</x>
+      <y>680</y>
+      <w>280</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>S3
+--
+   lock.indicators[Indicator_Error].set(false)
+   lock.components[Bottom_Door].set(0)
+   lock.components[Top_Door].set(0)
+   lock.components[Bottom_Slide].set(0)
+   lock.components[Top_Slide].set(0)
+   lock.buttons[Emergency].release() 
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>110</y>
+      <w>150</w>
+      <h>650</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+restart system</panel_attributes>
+    <additional_attributes>130.0;630.0;10.0;630.0;10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>900</x>
+      <y>470</y>
+      <w>130</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Stops movement on
+all slides and doors &amp;
+turns on indicator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>260</x>
+      <y>20</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>State Diagram - Emergency
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text>Space for diagram notes
+the boat stoff</help_text>
+  <zoom_level>4</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>676</x>
+      <y>284</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>292</y>
+      <w>60</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+boat arrives at lock</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>648</x>
+      <y>320</y>
+      <w>76</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>S1
+--
+exit()/requestPassage(boat)
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>448</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+going downstream[boat.Direction==Downstream]</panel_attributes>
+    <additional_attributes>10.0;20.0;310.0;20.0;310.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>652</x>
+      <y>428</y>
+      <w>72</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>S2
+--
+entry()/acceptPassage()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>784</x>
+      <y>320</y>
+      <w>72</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>S3
+--
+entry()/refusePassage()
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>336</y>
+      <w>48</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+request access
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>676</x>
+      <y>388</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>688</x>
+      <y>336</y>
+      <w>136</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[request denied]</panel_attributes>
+    <additional_attributes>10.0;150.0;320.0;150.0;320.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>400</y>
+      <w>56</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[request accepted]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>444</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+going upstream[boat.Direction==Upstream]</panel_attributes>
+    <additional_attributes>380.0;20.0;10.0;20.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>324</y>
+      <w>72</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>472</x>
+      <y>476</y>
+      <w>196</w>
+      <h>424</h>
+    </coordinates>
+    <panel_attributes>S4
+--
+entry()/lock.buttons[Request_Bottom].press()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>708</x>
+      <y>476</y>
+      <w>196</w>
+      <h>424</h>
+    </coordinates>
+    <panel_attributes>S5
+--
+entry()/lock.buttons[Request_Top].press()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>528</x>
+      <y>496</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>528</x>
+      <y>504</y>
+      <w>12</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>508</y>
+      <w>12</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>760</x>
+      <y>500</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>488</x>
+      <y>540</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>S4.1
+--
+entry()/
+   components[Bottom_Slide].set(1)
+   indicators[Indicator_Bottom].set(true)
+   lock.buttons[Request_Bottom].release()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>488</x>
+      <y>612</y>
+      <w>116</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>S4.2
+--
+entry()/
+  components[Bottom_Slide].set(0)
+  components[Bottom_Door].set(1)
+  waterLow = waterSensor.measure()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>488</x>
+      <y>668</y>
+      <w>116</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>S4.3
+--
+entry()/
+  lock.buttons[Proceed].press()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>848</y>
+      <w>60</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>688</y>
+      <w>88</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[buttons[Proceed].state == true]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>652</x>
+      <y>852</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>576</y>
+      <w>116</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+wait(waterSensor.measure()≈≈ waterLow)
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>516</x>
+      <y>648</y>
+      <w>12</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>488</x>
+      <y>724</y>
+      <w>116</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>S4.4
+--
+entry()/
+  lock.buttons[Proceed].release()
+exit()/
+  components[Bottom_Door].set(0)
+  indicators[Indicator_Bottom].set(false)
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>764</y>
+      <w>124</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+wait(components[Top_Door].measure() ≈≈ 0)
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>488</x>
+      <y>788</y>
+      <w>116</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>S4.5
+--
+entry()/
+ components[Top_Slide].set(1)
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>808</y>
+      <w>120</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+wait(waterSensor.measure() ≈≈ waterHigh)
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>488</x>
+      <y>828</y>
+      <w>116</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>S4.6
+--
+entry()/
+ components[Top_Slide].set(0)
+ components[Top_Door].set(1)
+ waterHigh = waterSensor.measure()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>896</y>
+      <w>76</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+boat departs from the lock</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>696</x>
+      <y>944</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>896</y>
+      <w>76</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+boat departs from the lock</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>560</x>
+      <y>936</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>324</y>
+      <w>80</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+boat arrives at lock</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>572</x>
+      <y>940</y>
+      <w>132</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+boat leaves [lock.previousLock==null]</panel_attributes>
+    <additional_attributes>10.0;20.0;310.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>940</y>
+      <w>132</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+boat leaves [lock.nextLock==null]</panel_attributes>
+    <additional_attributes>310.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>828</x>
+      <y>936</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>952</y>
+      <w>260</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+boat moves to the next lock [lock.nextLock!=null]</panel_attributes>
+    <additional_attributes>330.0;10.0;330.0;60.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>952</y>
+      <w>144</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+boat moves to the next lock [lock.previousLock!=null]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;330.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>676</x>
+      <y>984</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>See F at the top.
+Bridge used to reduce
+arrow spaghetti</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>884</x>
+      <y>860</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>852</x>
+      <y>856</y>
+      <w>40</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>740</x>
+      <y>836</y>
+      <w>116</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>S5.6
+--
+entry()/
+ components[Bottom_Slide].set(0)
+ components[Bottom_Door].set(1)
+ waterLow = waterSensor.measure()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>764</x>
+      <y>816</y>
+      <w>120</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+wait(waterSensor.measure() ≈≈ waterLow)
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>740</x>
+      <y>796</y>
+      <w>116</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>S5.5
+--
+entry()/
+ components[Bottom_Slide].set(1)
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>764</x>
+      <y>772</y>
+      <w>132</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+wait(components[Bottom_Door].measure() ≈≈ 0)
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>764</x>
+      <y>696</y>
+      <w>88</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[buttons[Proceed].state == true]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>740</x>
+      <y>676</y>
+      <w>116</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>S5.3
+--
+entry()/
+  lock.buttons[Proceed].press()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>740</x>
+      <y>732</y>
+      <w>116</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>S5.4
+--
+entry()/
+  lock.buttons[Proceed].release()
+exit()/
+  components[Top_Door].set(0)
+  indicators[Indicator_Top].set(false)
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>740</x>
+      <y>620</y>
+      <w>116</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>S5.2
+--
+entry()/
+  components[Top_Slide].set(0)
+  components[Top_Door].set(1)
+  waterHigh = waterSensor.measure()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>764</x>
+      <y>656</y>
+      <w>12</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>764</x>
+      <y>584</y>
+      <w>120</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+wait(waterSensor.measure()≈≈ waterHigh)
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>740</x>
+      <y>548</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>S5.1
+--
+entry()/
+   components[Top_Slide].set(1)
+   indicators[Indicator_Top].set(true)
+   lock.buttons[Request_Top].release()
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>696</x>
+      <y>968</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>F</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>568</x>
+      <y>328</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>F</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>460</x>
+      <y>288</y>
+      <w>72</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>State Diagram - Passage
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
