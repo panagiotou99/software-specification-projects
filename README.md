@@ -1,4 +1,4 @@
-# Lock Control System for Canals: Requirements Specification
+# Lock Control System for Canals: Requirements Specification Project
 
 ## Overview
 This project was developed as part of the Software Specification course (2IX20) of TU/e. I collaborated with a local dutch student. It involves the design and modeling of a control system for a sequence of locks in a canal. The focus is on creating UML models and a non-formal requirements specification.
