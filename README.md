@@ -14,13 +14,6 @@ The control system is designed for a flight of locks, allowing ships to move bet
 - **Sequence Diagram:** Describing the interactions needed for a ship to move through the lock system.
 - **Activity Diagram:** Illustrating the process when a ship arrives at a specific lock.
 
-## How to Contribute
-Feel free to contribute by providing feedback, suggestions, or improvements. Fork the repository, make your changes, and submit a pull request.
-
-## Reflection
-In the reflection section of the report, we discuss challenges faced during the assignment and provide insights into each team member's contributions.
-
 ## Deliverables
 The assignment report, containing the requirements and UML models, is available as a PDF file.
 
-Enjoy exploring the intricacies of lock control systems!
