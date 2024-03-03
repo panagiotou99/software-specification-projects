@@ -13,7 +13,6 @@ The control system is designed for a flight of locks, allowing ships to move bet
 - **State Machine Diagrams:** UML diagrams capturing the behavior of the control unit, including normal and exceptional scenarios.
 - **Sequence Diagram:** Describing the interactions needed for a ship to move through the lock system.
 - **Activity Diagram:** Illustrating the process when a ship arrives at a specific lock.
-
-## Deliverables
-The assignment report, containing the requirements and UML models, is available as a PDF file.
+- **Modelling and Verification Report:** A comprehensive report in PDF format, describing and motivating modeling choices, formalizing requirements, and discussing verification outcomes.
+- **Promela Files:** Two Promela files (single lock system and multiple locks system) formalizing the properties of the control system. These files should be submitted in a ZIP file via the Canvas submission page.
 
